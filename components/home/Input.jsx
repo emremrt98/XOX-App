@@ -5,7 +5,7 @@ import { useFonts } from 'expo-font';
 const windowWidth = Dimensions.get('window').width;
 
 const Input = ({ handleChangeText, text, placeholder }) => {
-   
+
     return (
         <TextInput
             style={[styles.input, fonts.text]}
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#cfcfcf',
         backgroundColor: 'white',
-        width: windowWidth / 1.5,
+        width: '100%',
         height: 48,
         borderRadius: 6,
         color: '#343A40',

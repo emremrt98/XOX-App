@@ -1,13 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { useFonts } from 'expo-font';
 import fonts from '../../styles/font.js';
 import Input from './Input.jsx';
 import Button from './shared/Button.jsx';
 export default function Started() {
-    
+
     return (
-        <View>
+        <View style={styles.container}>
             <View>
                 <Text style={[fonts.text, styles.title]}>XOX Oyununa Hoşgeldiniz</Text>
             </View>
@@ -36,6 +35,10 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         marginTop: 20,
+    },
+    container: {
+        width: '100%',
+        paddingHorizontal: 20,
     }
 })
 

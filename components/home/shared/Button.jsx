@@ -1,7 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import fonts from '../../../styles/font.js';
-import { useFonts } from 'expo-font';
 const Button = ({ title, onPress }) => {
 
     return (
@@ -18,6 +17,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         height: 56,
+        width: '48%',
     },
     buttonText: {
         color: 'white',
